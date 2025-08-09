@@ -37,7 +37,7 @@ const NewsPage = () => {
     setError(null);
     
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/news/search?filter_type=${filterType}`);
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/get-news?filter_type=${filterType}`);
       
       if (!response.ok) {
         throw new Error(`Error ${response.status}: ${response.statusText}`);
