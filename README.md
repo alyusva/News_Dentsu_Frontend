@@ -102,14 +102,22 @@ News_Dentsu_Frontend/
     └── ...                          # Miles de archivos de dependencias
 ```
 
-## 🌐 API Integration
+## 🌐 Backend Integration
 
-La aplicación se conecta a un backend desplegado en Google Cloud Run que proporciona:
-- Agregación de noticias de múltiples fuentes
-- Filtrado por categorías
-- Procesamiento de contenido con IA
+Esta aplicación funciona en conjunto con el backend desarrollado en Node.js que proporciona:
 
-**Endpoint base**: `https://news-dentsu-backend-347262125232.europe-southwest1.run.app`
+- 📡 **API de noticias**: Agregación de múltiples fuentes especializadas
+- 🔍 **Filtrado inteligente**: Categorización automática por IA y Marketing  
+- 🤖 **Procesamiento con IA**: Análisis y estructuración de contenido
+- ☁️ **Despliegue**: Google Cloud Run para alta disponibilidad
+
+> **Backend Repository**: [News_Dentsu_Backend](https://github.com/alyusva/News_Dentsu_Backend)
+
+### Variables de Entorno Requeridas
+
+```env
+VITE_API_URL=your_backend_url_here
+```
 
 ## 🎨 Funcionalidades
 
