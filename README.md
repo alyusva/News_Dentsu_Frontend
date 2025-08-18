@@ -132,6 +132,7 @@ El proyecto está optimizado para despliegue en plataformas modernas como Vercel
 npm run build
 ```
 
-## 📄 Licencia
+## Contacto
 
-Proyecto privado para uso interno de Dentsu.
+- GitHub: [@alyusva](https://github.com/alyusva)
+- Proyecto: [News_Dentsu_Frontend](https://github.com/alyusva/News_Dentsu_Frontend)
