@@ -63,16 +63,43 @@ npm run lint     # Linting con ESLint
 ## 🏗️ Estructura del Proyecto
 
 ```
-src/
-├── components/          # Componentes reutilizables
-│   ├── ui/             # Componentes de UI base
-│   ├── Footer.jsx      # Footer de la aplicación
-│   └── ThemeProvider.jsx # Proveedor de tema
-├── pages/              # Páginas principales
-│   ├── HomePage.jsx    # Página de inicio
-│   └── NewsPage.jsx    # Página de noticias
-├── lib/                # Utilidades y helpers
-└── App.jsx             # Componente principal
+News_Dentsu_Frontend/
+├── index.html                    # Punto de entrada HTML principal
+├── package.json                  # Dependencias y scripts de npm
+├── package-lock.json             # Lock de versiones exactas
+├── README.md                     # Documentación del proyecto
+├── .gitignore                    # Archivos ignorados por Git
+├── vite.config.js                # Configuración de Vite
+├── tailwind.config.js            # Configuración de Tailwind CSS
+├── postcss.config.js             # Configuración de PostCSS
+├── eslint.config.js              # Configuración de ESLint
+├── vercel.json                   # Configuración de despliegue Vercel
+│
+├── public/                       # Archivos estáticos públicos
+│   ├── vite.svg                  # Icono de Vite (favicon)
+│   └── _redirects               # Reglas de redirección (SPA)
+│
+├── src/                          # Código fuente principal
+│   ├── main.jsx                  # Punto de entrada de React
+│   ├── App.jsx                   # Componente raíz con Router
+│   ├── index.css                 # Estilos globales con Tailwind
+│   │
+│   ├── components/               # Componentes reutilizables
+│   │   ├── Footer.jsx            # Footer común de la aplicación
+│   │   ├── ThemeProvider.jsx     # Context Provider para tema claro/oscuro
+│   │   │
+│   │   └── ui/                   # Componentes de UI base
+│   │       └── button.jsx        # Componente Button reutilizable
+│   │
+│   ├── pages/                    # Páginas principales de la aplicación
+│   │   ├── HomePage.jsx          # Página de inicio (landing)
+│   │   └── NewsPage.jsx          # Página de noticias con filtros
+│   │
+│   └── lib/                      # Utilidades y helpers
+│       └── utils.js              # Funciones de utilidad (cn para clases)
+│
+└── node_modules/                 # Dependencias de npm (generado)
+    └── ...                          # Miles de archivos de dependencias
 ```
 
 ## 🌐 API Integration
